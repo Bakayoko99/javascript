@@ -188,16 +188,25 @@ switch (month) {
 
 var roundeNumber = 3.6
 
-if( roundeNumber   ){
+console.log("Math.floor: ", Math.floor(roundeNumber));
 
-    console.log(Math.floor())
+console.log("Math.ceil: ", Math.ceil(roundeNumber));
 
+var decimal =  roundeNumber - Math.floor(roundeNumber);
+
+console.log(decimal);
+
+var result = 0;
+
+if (decimal >= 0.5){
+    result = Math.ceil(roundeNumber)
 }
 
-else if( ){
-    console.log(Math.ceil())
-}
+else {
+    result = Math.floor(roundeNumber)
+};
 
+console.log("My result:", result);
 
 
 // 12 - Bonus IV
