@@ -106,14 +106,19 @@ var toto = 0
 
 var totoLimit = 10
 
+var io = 0
+
 while( toto <= totoLimit ){
 
-    toto += 
+    io = io + toto
+    toto++
 
 }
 
-console.log(toto)
+console.log(io)
 
 // 09 - Bonus III
+
+var promo = []
 
 // 10 - Bonus IV
