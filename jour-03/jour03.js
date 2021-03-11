@@ -79,23 +79,23 @@ var fin = 100
 
 for (i = 0; i <= fin; i++) {
 
-    if (i % 3 === 0) {
-
-        console.log("fizz");
-
-    }else if(i % 5 === 0) {
-
-        console.log("buzz");
-        
-    }else if(( i % 5 && i %5 ) === 0) {
+    if ((i % 5 && i % 5) === 0) {
 
         console.log("fizzbuzz");
 
-    }else if(i % 7 === 0) {
+    } else if (i % 3 === 0) {
+
+        console.log("fizz");
+
+    } else if (i % 5 === 0) {
+
+        console.log("buzz");
+
+    } else if (i % 7 === 0) {
 
         console.log();
 
-    }else{ 
+    } else {
         console.log(i);
     }
 }
@@ -108,7 +108,7 @@ var totoLimit = 10
 
 var io = 0
 
-while( toto <= totoLimit ){
+while (toto <= totoLimit) {
 
     io = io + toto
     toto++
@@ -119,6 +119,55 @@ console.log(io)
 
 // 09 - Bonus III
 
-var promo = []
+var promo = [
+
+"ALBERT", 
+"AMARA",
+"AOURACHI", 
+"ARIAS",
+"BAKAYOKO",
+"BOUGHAL",
+"EZKA",
+"GNANASEGARAM",
+"GUTIERREZ",
+"HATAM",
+"KHAN",
+"LACHEHAB",
+"MASSOU",
+"MEZOUAR",
+"MOMIN",
+"MSADAK",
+"NAMUJIMBO",
+"RAHMAN",
+"SOW"
+
+];
+
+var min = 0;
+
+var max = promo.length - 1;
+
+var randomPromo = Math.random();
+
+var indexRandom = Math.floor(randomPromo + (max + 1));
+
+console.log(promo[indexRandom]);
+
+
+
 
 // 10 - Bonus IV
+
+var array = [];
+
+var minimo = 0;
+
+var massimo = 100;
+
+
+
+for (var i = 0; i <= 20; i++){
+
+
+
+}
