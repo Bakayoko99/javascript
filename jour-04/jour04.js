@@ -77,8 +77,6 @@ compare(36, 25);
 
 // 05 - Add Up
 
-
-
 function addUp(num){
 
     var a = 0;
@@ -96,6 +94,26 @@ function addUp(num){
 console.log(addUp(12));
 
 // 06 - Time
+
+var h = 3600;
+var m = 60;
+var s = 1;
+
+function format(num){
+
+    hour =  (num - 3600)
+
+    minutes = 
+
+
+
+    return num
+
+};
+
+console.log(format(3700));
+
+console.log(2800 % 60);
 
 // 07 - Bonus 
 
