@@ -7,19 +7,29 @@
 //     ⇒ Si vous ne donnez pas trois arguments, le programme doit afficher "error" dans la console
 
 
- function calculate(num1, num2, multiplication){
+ function calculate(num1, num2, operator){
 
-//     if()
+     if ( operator == "+"){
 
-var num1 = "5";
+        console.log(num1 + num2)
+     }
+     else if ( operator == "-"){
+         console.log(num1 - num2)
+     }
+     else if ( operator == "X"){
+         console.log(num1 * num2)
+     }
+     else if ( operator == "/")
+         console.log(num1 / num2)
 
-var n2 = "9";
+     else if( operator == "%")
+         console.log(num1 % num2)
 
-var opérateur = "*"
+     else (console.log("error"))
+    }
 
-var test = "1demo"
 
-// }
-console.log(parseInt(num1, 2))
 
-// calculate(5, 9 )
+
+    calculate(parseInt(process.argv[2]), parseInt(process.argv[3]), process.argv[4])
+
