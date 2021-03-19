@@ -24,8 +24,8 @@ function multiply(num1){
     }
 
     }
-}
 
+}
 
  multiply(process.argv[2])
 

@@ -27,7 +27,7 @@ function multiply(num1){
 }
 
 
-//  multiply(process.argv[2])
+ multiply(process.argv[2])
 
 
  var num2 = 0
@@ -51,8 +51,8 @@ function multiply(num1){
  }
  
  
-//   addition(process.argv[2])
+  addition(process.argv[2])
 
 
-  module.exports = { addition, multiply}
+  module.exports = { addition, multiply};
  

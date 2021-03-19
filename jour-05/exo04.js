@@ -8,42 +8,56 @@
 // - Appelez la fonction
 // - Testez le jeu
 
-var min = 1;
-var max = 100;
 
-var go = 50;
 
-// var mysteryNum = -Math.floor(Math.random() * (max - min + 1) + min);
+var prompt = require("prompt");
 
-var domanda = "Quel est le nombre mystère ?";
+var mysteryNum = Math.floor(Math.random() * 100 + 1);
 
-function play(question){
 
-if( typeof go === 1 ){ 
+prompt.start();  
 
-    console.log("error")
+function onErr(err) { 
+  console.log(err);
+  return;
 }
 
-else if(go < mysteryNum){
+function play(){
 
-    console.log("C'est plus !")
+prompt.get([{
+    
+    name: "userNum",
+    validator: /^[1-9][0-9]?$|^100$/,
+    description: "Quel est le nombre mystère ?"
 
-}
+    }],
+    
+    function (err, res) {  
+  if (err) {
+		return onErr(err);
+	}
 
-else if(go > mysteryNum){
+  else if( res.userNum < mysteryNum ) {
 
-    console.log("C'est moins !")
+    console.log( "c'est plus")
+    play()
+    
+  }
+  else if( res.userNum > mysteryNum ) {
 
-}
+    console.log( "c'est moins")
+    play()
 
-else if(go == mysteryNum){
+  }
 
-    console.log("Bravo !!")
+  else( console.log( "Bravo !") ) 
 
-}
 
-}
+})};
 
-play(domanda)
 
-console.log(play)
+play();
+
+
+
+ 

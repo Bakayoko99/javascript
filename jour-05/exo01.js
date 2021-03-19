@@ -7,7 +7,7 @@
 //     ⇒ Si vous ne donnez pas trois arguments, le programme doit afficher "error" dans la console
 
 
- function calculate(num1, num2, operator){
+ function calculate(num1, operator, num2){
 
      if ( operator == "+"){
 
@@ -28,8 +28,5 @@
      else (console.log("error"))
     }
 
-
-
-
-    calculate(parseInt(process.argv[2]), parseInt(process.argv[3]), process.argv[4])
+    calculate(parseInt(process.argv[2]), process.argv[3], parseInt(process.argv[4]) )
 
