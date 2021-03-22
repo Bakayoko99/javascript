@@ -13,9 +13,9 @@
 // À l'aide du package `prompt` que vous connaissez, et du package `colors` (cherchez le sur NPM et lisez la doc), tentez d'écrire un code qui peut permettre à l'utilisateur de jouer à Motus.
 //  Si vous réussissez : [bravo !](https://youtu.be/Kz4-Z-s5R9o) Sinon : [dommage...](https://youtu.be/y_sG_lPgMvk)
 
-
+ 
 var prompt = require("prompt");
-var Color = require("color");
+var colors = require("colors");
 
 
 
@@ -42,8 +42,18 @@ function play(){
         if (err) {
         return onErr(err);}
 
-        else if(res.userWord )
+        else if(res.userWord.indexOf(motMystere)){
 
+            // var goodR =  =  Color("red", "keyword"
+            
+            console.log( "\x1b[0m", res.userWord.charAt(motMystere) );
+        }
+        else if(res.userWord.indexOf(motMystere)){
+
+            // var goodR =  =  Color("red", "keyword"
+            
+            console.log( res.userWord.charAt(motMystere).red );
+        }
 
 
 
