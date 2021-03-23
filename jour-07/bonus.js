@@ -19,7 +19,7 @@ var properties = [
     }
 ]
 
-function play(){
+
 
 prompt.get(properties, function(err, res){
     if (err) {
@@ -31,6 +31,5 @@ prompt.get(properties, function(err, res){
 
     
 })
-}
 
-play();
+
