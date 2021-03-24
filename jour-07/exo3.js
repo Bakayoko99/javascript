@@ -13,11 +13,11 @@ var longNames = [
 ]
 
 
-var shortNames = longNames.map(function(names){
+var shortNames = longNames.map(function(elem){
     
-    names = { name: names.firstName +" "+ names.lastName }
+    elem = { name: elem.firstName +" "+ elem.lastName }
     
-    return names
+    return elem
     
 })
 
