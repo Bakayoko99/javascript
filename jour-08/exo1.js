@@ -11,26 +11,25 @@ var countriesNames = [];
 
 
 function getCountries(){
-
+    
     request.get("https://restcountries.eu/rest/v2/all", function(err, res, body){
-
+        
         if(err){
             console.log(err)
         }
-
+        
         var countries = JSON.parse(body)
-
+        
         var names = countries.map(function(elem){
             elem =  elem.name
-            return elem
-
-        })
-
-        countriesNames.push(names)
-        countriesNames.join("-")
         
-        console.log(countriesNames)
+            return elem
+            
+        })
+        
+        
+        console.log(names.join(" - "))
     })
-
+    
 }
 getCountries()
